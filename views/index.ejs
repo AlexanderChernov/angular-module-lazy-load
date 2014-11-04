@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/">
+    <title>Lazy load</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body ng-controller="appController">
+    <ul class="tabs">
+      <li>
+        <a ui-sref="chart">Chart</a>
+      </li>
+      <li>
+        <a ui-sref="list">List</a>
+      </li>
+      <li>
+        <a ui-sref="table">Table</a>
+      </li>
+    </ul>
+    <div ui-view></div>
+    <script data-main="/javascripts/main" src="/javascripts/requirejs/require.js"></script>
+  </body>
+</html>
